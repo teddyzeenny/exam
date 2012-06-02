@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>What is HTML5</title>
+  </head>
+  <body style="background:#ccc;">
+		<div id="wrapper" style="width:800px;margin:auto;position:relative;">
+			
+			<div id="header">
+				<div id="clock" style="position:absolute;right:0px;top:10px;padding-left:15px;background:url(img/time_icon.png) left 4px no-repeat;"></div>
+
+				<div id="nav" style="height:50px;">
+					<ul style="padding:0;margin:0;">
+						<li style="float:left;"><a href="#" id="black" style="text-decoration:none;color:black;">What is html5?</a></li>
+						<li style="float:left;padding-left:20px;"><a id="red" href="#" style="text-decoration:none;color:red;">What is html5?</a></li>
+						<li style="float:left;padding-left:20px;"><a id="blue" href="#" style="text-decoration:none;color:blue;">What is html5?</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div id="article">
+				<h1 style="background:url(img/arrow_right.png) left 20px no-repeat;padding-left:10px;">What is HTML5?</h1>
+				
+				<p><em>Everything that makes the web sing.</em></p>
+
+				<p>
+					HMTL5 is not a single thing or a monolithic technology. It is a collection of features, technologies, and APIs that brings the power of the 
+					desktop and the vibrancy of multimedia experience to the web; while amplifying the web's core strengths of interactivity and connectivity.
+				</p>
+
+				<p>
+					HTML5 includes the fifth revision of the HTML markup language, CSS3, and a series of JavaScript APIs. 
+					Together, these technologies enable you to create complex applications that previously could be created only for desktop platforms.
+				</p>
+
+				<p>
+					HTML5 does not belong to a company or a specific browser. It has been forged by a community of people interested in evolving the web and a consortium of technological leaders that includes Google, Microsoft, Apple, Mozilla, Facebook, IBM, HP, Adobe, and many others. The community and consortium continue to collaborate on universal browser standards to push web capabilities even further. The next generation of web apps can run high-performance graphics, work offline, store a large amount of data on the client, perform calculations fast, and take interactivity and collaboration to the next level.
+				</p>
+
+				<p>
+					هذه الجملة مكتوبة باللغة العربية
+				</p>
+			</div>
+			
+			<form id="contact" style="border-top:dotted 2px black;" method="post" onsubmit="return false;">
+				<p>
+					Want to stay updated on HTML5?
+				</p>
+				<label for="form-name">Name</label>
+				<input type="text" id="form-name" />
+				<label for="form-email">Email</label>
+				<input type="text" id="form-email" />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+		
+		<script>
+			setInterval(function() {
+				var date = new Date();
+				var hour = date.getHours();
+				var minute = date.getMinutes();
+				var second = date.getSeconds();
+				
+				document.getElementById('clock').innerHTML = hour;
+				document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML + ':';
+				document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML + minute;
+				document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML + ':';
+				document.getElementById('clock').innerHTML = document.getElementById('clock').innerHTML + second;
+			}, 1);
+			
+			
+			
+			
+			
+			
+			
+			document.getElementById('black').addEventListener('click', makeTextBlack);
+			document.getElementById('red').addEventListener('click', makeTextRed);
+			document.getElementById('blue').addEventListener('click', makeTextBlue);
+			
+			function makeTextRed() {
+				document.getElementById('article').style.color = "red";
+			}
+			
+			function makeTextBlue() {
+				document.getElementById('article').style.color = "blue";
+			}
+			
+			function makeTextBlack() {
+				document.getElementById('article').style.color = "black";
+			}
+		</script>
+  </body>
+</html>
