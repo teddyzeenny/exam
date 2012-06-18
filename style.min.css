@@ -1,0 +1,29 @@
+@charset utf-8;
+body{background-color:#ccc}
+header {clear: both;}
+@media screen and (min-width: 800px) {
+#wrapper{width:800px;position:relative;margin:auto}
+time{position:absolute;right:0;top:10px;padding-left:15px;background:url(img/icons.png) left 4px no-repeat}
+nav{height:50px}
+article h1{background:url(img/icons.png) left -15px no-repeat;padding-left:10px;font-size:2em}
+}
+@media screen and (max-width: 800px) {
+#wrapper{width:100%}
+time{position:relative;padding-left:15px;background:url(img/icons.png) left 4px no-repeat}
+article h1{background:url(img/icons.png) left -15px no-repeat;padding-left:10px;font-size:2em;margin-top:5px;margin-bottom:5px}
+nav{height:20px;clear:both;margin-top:10px}
+div#name-l {float:left;clear:both}
+div#email-l {float:left;clear:both}
+#form-submit {float:left;clear:both}
+#response{float:left;clear:both}
+}
+nav ul{list-style:none;margin:0;padding:0}
+nav ul li{float:left;padding-left:20px}
+nav ul li:first-child{padding-left:0}
+form#contact{border-top:dotted 2px #000}
+li a#black{text-decoration:none;color:#000}
+li a#red{text-decoration:none;color:red}
+li a#blue{text-decoration:none;color:blue}
+#main_article{-webkit-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;transition:all 1s ease-in-out;text-shadow:0 1px 0 #FFF}
+#main_article ::selection{background:#0C0;color:#FFF;text-shadow:none}
+#response{color:red}
